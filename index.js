@@ -1,7 +1,9 @@
 var app = new Vue({
   el: '#app',
   data: {
-    message: 'Hello Vue!',
-    shoppingList: ['Eggs', 'Bacon', 'Bagels']
+    shoppingList: ['Eggs', 'Bacon', 'Bagels'],
+    addItem: function() {
+    	shoppingList.push('foo');
+    }
   }
 })
